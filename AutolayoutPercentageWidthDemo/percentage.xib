@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="cbq-Ll-IgF">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_so" translatesAutoresizingMaskIntoConstraints="NO" id="DQa-Pg-0HH">
+                    <rect key="frame" x="150" y="50" width="300" height="300"/>
+                    <color key="backgroundColor" red="0.46666666670000001" green="0.64705882349999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="DQa-Pg-0HH" secondAttribute="height" multiplier="1:1" id="rmb-qI-v0u"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="宽度50%有木有" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXJ-5Q-vmZ">
+                    <rect key="frame" x="239" y="390" width="122" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="DQa-Pg-0HH" firstAttribute="leading" secondItem="cbq-Ll-IgF" secondAttribute="centerX" multiplier="0.5" id="10o-8H-Ju9"/>
+                <constraint firstItem="DQa-Pg-0HH" firstAttribute="top" secondItem="cbq-Ll-IgF" secondAttribute="top" constant="50" id="P3M-Mw-Z4g"/>
+                <constraint firstItem="oXJ-5Q-vmZ" firstAttribute="top" secondItem="DQa-Pg-0HH" secondAttribute="bottom" constant="40" id="Y1t-wi-dCB"/>
+                <constraint firstItem="DQa-Pg-0HH" firstAttribute="trailing" secondItem="cbq-Ll-IgF" secondAttribute="centerX" multiplier="1.5" id="dVj-zX-7bS"/>
+                <constraint firstItem="oXJ-5Q-vmZ" firstAttribute="centerX" secondItem="DQa-Pg-0HH" secondAttribute="centerX" id="ttx-w2-akw"/>
+            </constraints>
+            <point key="canvasLocation" x="211" y="342"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo_so" width="128" height="128"/>
+    </resources>
+</document>

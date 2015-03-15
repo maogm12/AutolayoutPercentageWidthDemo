@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3FB1C6821AB541E6000874F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1C6811AB541E6000874F4 /* AppDelegate.swift */; };
-		3FB1C6841AB541E6000874F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1C6831AB541E6000874F4 /* ViewController.swift */; };
+		3FB1C6841AB541E6000874F4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1C6831AB541E6000874F4 /* TableViewController.swift */; };
 		3FB1C6871AB541E6000874F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB1C6851AB541E6000874F4 /* Main.storyboard */; };
 		3FB1C6891AB541E6000874F4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FB1C6881AB541E6000874F4 /* Images.xcassets */; };
 		3FB1C68C1AB541E6000874F4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FB1C68A1AB541E6000874F4 /* LaunchScreen.xib */; };
 		3FB1C6981AB541E6000874F4 /* AutolayoutPercentageWidthDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1C6971AB541E6000874F4 /* AutolayoutPercentageWidthDemoTests.swift */; };
+		3FB1C6A21AB559DF000874F4 /* percentage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FB1C6A11AB559DF000874F4 /* percentage.xib */; };
+		3FB1C6A61AB563D1000874F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB1C6A51AB563D1000874F4 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +31,15 @@
 		3FB1C67C1AB541E6000874F4 /* AutolayoutPercentageWidthDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutolayoutPercentageWidthDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FB1C6801AB541E6000874F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FB1C6811AB541E6000874F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3FB1C6831AB541E6000874F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FB1C6831AB541E6000874F4 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		3FB1C6861AB541E6000874F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FB1C6881AB541E6000874F4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3FB1C68B1AB541E6000874F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3FB1C6911AB541E6000874F4 /* AutolayoutPercentageWidthDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutolayoutPercentageWidthDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FB1C6961AB541E6000874F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FB1C6971AB541E6000874F4 /* AutolayoutPercentageWidthDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutolayoutPercentageWidthDemoTests.swift; sourceTree = "<group>"; };
+		3FB1C6A11AB559DF000874F4 /* percentage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = percentage.xib; sourceTree = "<group>"; };
+		3FB1C6A51AB563D1000874F4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +82,13 @@
 			isa = PBXGroup;
 			children = (
 				3FB1C6811AB541E6000874F4 /* AppDelegate.swift */,
-				3FB1C6831AB541E6000874F4 /* ViewController.swift */,
+				3FB1C6831AB541E6000874F4 /* TableViewController.swift */,
 				3FB1C6851AB541E6000874F4 /* Main.storyboard */,
+				3FB1C6A11AB559DF000874F4 /* percentage.xib */,
 				3FB1C6881AB541E6000874F4 /* Images.xcassets */,
 				3FB1C68A1AB541E6000874F4 /* LaunchScreen.xib */,
 				3FB1C67F1AB541E6000874F4 /* Supporting Files */,
+				3FB1C6A51AB563D1000874F4 /* ViewController.swift */,
 			);
 			path = AutolayoutPercentageWidthDemo;
 			sourceTree = "<group>";
@@ -193,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FB1C6871AB541E6000874F4 /* Main.storyboard in Resources */,
+				3FB1C6A21AB559DF000874F4 /* percentage.xib in Resources */,
 				3FB1C68C1AB541E6000874F4 /* LaunchScreen.xib in Resources */,
 				3FB1C6891AB541E6000874F4 /* Images.xcassets in Resources */,
 			);
@@ -212,7 +219,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FB1C6841AB541E6000874F4 /* ViewController.swift in Sources */,
+				3FB1C6A61AB563D1000874F4 /* ViewController.swift in Sources */,
+				3FB1C6841AB541E6000874F4 /* TableViewController.swift in Sources */,
 				3FB1C6821AB541E6000874F4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
