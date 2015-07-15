@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hP4-DJ-Nuq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hP4-DJ-Nuq">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -84,8 +85,28 @@
                                     <constraint firstAttribute="width" secondItem="jlI-xs-tvI" secondAttribute="height" multiplier="1:1" id="Ha7-Wp-kYJ"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_so" translatesAutoresizingMaskIntoConstraints="NO" id="tal-fl-Isz">
+                                <rect key="frame" x="90" y="344" width="180" height="180"/>
+                                <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tal-fl-Isz" secondAttribute="height" multiplier="1:1" id="K7V-UH-tdK"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_so" translatesAutoresizingMaskIntoConstraints="NO" id="kxZ-nm-o41">
+                                <rect key="frame" x="330" y="344" width="180" height="180"/>
+                                <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kxZ-nm-o41" secondAttribute="height" multiplier="1:1" id="7FX-4C-sir"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="宽度30%，不信你量" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vix-0a-oP7">
-                                <rect key="frame" x="222.5" y="324" width="155.5" height="20.5"/>
+                                <rect key="frame" x="222" y="304" width="155.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="两个宽度30%，中间隔了10%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLB-Dc-ymf">
+                                <rect key="frame" x="187" y="544" width="226" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -93,16 +114,36 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="kxZ-nm-o41" secondAttribute="trailing" constant="50" id="DEq-oo-QWI"/>
                             <constraint firstItem="jlI-xs-tvI" firstAttribute="width" secondItem="D0z-kR-g9p" secondAttribute="width" multiplier="0.3" id="L6t-jy-rbB"/>
+                            <constraint firstItem="tal-fl-Isz" firstAttribute="leading" secondItem="D0z-kR-g9p" secondAttribute="centerX" multiplier="0.3" id="Ngg-At-Hdn"/>
                             <constraint firstItem="jlI-xs-tvI" firstAttribute="top" secondItem="dHI-uz-CId" secondAttribute="bottom" constant="40" id="Qyu-1o-moG"/>
+                            <constraint firstItem="tal-fl-Isz" firstAttribute="width" secondItem="D0z-kR-g9p" secondAttribute="width" multiplier="0.3" id="Ri7-Wx-8TQ"/>
+                            <constraint firstItem="tal-fl-Isz" firstAttribute="top" secondItem="Vix-0a-oP7" secondAttribute="bottom" constant="20" id="SSL-5q-ypN"/>
+                            <constraint firstItem="kxZ-nm-o41" firstAttribute="trailing" secondItem="D0z-kR-g9p" secondAttribute="centerX" multiplier="1.7" id="VXa-uK-ZFl"/>
+                            <constraint firstItem="tal-fl-Isz" firstAttribute="leading" secondItem="D0z-kR-g9p" secondAttribute="centerXWithinMargins" multiplier="0.075" constant="69" id="Vw6-gW-owa"/>
+                            <constraint firstAttribute="centerX" secondItem="qLB-Dc-ymf" secondAttribute="centerX" id="W7d-3U-nZK"/>
                             <constraint firstItem="Vix-0a-oP7" firstAttribute="centerX" secondItem="jlI-xs-tvI" secondAttribute="centerX" id="Wun-8e-7Kk"/>
-                            <constraint firstItem="Vix-0a-oP7" firstAttribute="top" secondItem="jlI-xs-tvI" secondAttribute="bottom" constant="40" id="c1A-Pa-kQt"/>
+                            <constraint firstItem="kxZ-nm-o41" firstAttribute="top" secondItem="Vix-0a-oP7" secondAttribute="bottom" constant="20" id="Y5M-3Q-jJm"/>
+                            <constraint firstItem="Vix-0a-oP7" firstAttribute="top" secondItem="kxZ-nm-o41" secondAttribute="top" constant="-40" id="Yuh-dq-55K"/>
+                            <constraint firstItem="Vix-0a-oP7" firstAttribute="top" secondItem="jlI-xs-tvI" secondAttribute="bottom" constant="20" id="c1A-Pa-kQt"/>
                             <constraint firstItem="jlI-xs-tvI" firstAttribute="top" secondItem="D0z-kR-g9p" secondAttribute="top" constant="50" id="hox-pI-8ZB"/>
+                            <constraint firstItem="kxZ-nm-o41" firstAttribute="width" secondItem="D0z-kR-g9p" secondAttribute="width" multiplier="0.3" id="hzl-Dr-p60"/>
                             <constraint firstAttribute="centerX" secondItem="jlI-xs-tvI" secondAttribute="centerX" id="oTQ-MR-M01"/>
+                            <constraint firstItem="kxZ-nm-o41" firstAttribute="width" secondItem="kxZ-nm-o41" secondAttribute="height" multiplier="1:1" id="pAI-qP-fv4"/>
+                            <constraint firstItem="Vix-0a-oP7" firstAttribute="top" secondItem="tal-fl-Isz" secondAttribute="top" constant="-40" id="q8s-kz-klU"/>
+                            <constraint firstItem="tal-fl-Isz" firstAttribute="width" secondItem="tal-fl-Isz" secondAttribute="height" multiplier="1:1" id="qJS-Rh-ce0"/>
+                            <constraint firstItem="qLB-Dc-ymf" firstAttribute="top" secondItem="kxZ-nm-o41" secondAttribute="bottom" constant="20" id="yzh-Fd-xyd"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="hox-pI-8ZB"/>
+                                <exclude reference="Vw6-gW-owa"/>
+                                <exclude reference="qJS-Rh-ce0"/>
+                                <exclude reference="Yuh-dq-55K"/>
+                                <exclude reference="q8s-kz-klU"/>
+                                <exclude reference="DEq-oo-QWI"/>
+                                <exclude reference="pAI-qP-fv4"/>
                             </mask>
                         </variation>
                     </view>

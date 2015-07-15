@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -13,14 +13,34 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_so" translatesAutoresizingMaskIntoConstraints="NO" id="DQa-Pg-0HH">
-                    <rect key="frame" x="150" y="50" width="300" height="300"/>
+                    <rect key="frame" x="150" y="20" width="300" height="300"/>
                     <color key="backgroundColor" red="0.46666666670000001" green="0.64705882349999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="DQa-Pg-0HH" secondAttribute="height" multiplier="1:1" id="rmb-qI-v0u"/>
                     </constraints>
                 </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_so" translatesAutoresizingMaskIntoConstraints="NO" id="xN4-zO-3oX">
+                    <rect key="frame" x="60" y="380" width="180" height="180"/>
+                    <color key="backgroundColor" red="0.46666666670000001" green="0.64705882349999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="xN4-zO-3oX" secondAttribute="height" multiplier="1:1" id="Ndr-bc-Lc8"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_so" translatesAutoresizingMaskIntoConstraints="NO" id="q0W-s4-8oP">
+                    <rect key="frame" x="360" y="381" width="180" height="180"/>
+                    <color key="backgroundColor" red="0.46666666670000001" green="0.64705882349999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="q0W-s4-8oP" secondAttribute="height" multiplier="1:1" id="1LE-tf-fvq"/>
+                    </constraints>
+                </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="宽度50%有木有" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXJ-5Q-vmZ">
-                    <rect key="frame" x="239" y="390" width="122" height="20.5"/>
+                    <rect key="frame" x="239" y="340" width="121.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="两个30%，中间隔了20%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0P-ae-mjE">
+                    <rect key="frame" x="204" y="581" width="192" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
@@ -28,12 +48,32 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="q0W-s4-8oP" firstAttribute="trailing" secondItem="cbq-Ll-IgF" secondAttribute="centerX" multiplier="1.8" id="0Ac-BD-DA2"/>
                 <constraint firstItem="DQa-Pg-0HH" firstAttribute="leading" secondItem="cbq-Ll-IgF" secondAttribute="centerX" multiplier="0.5" id="10o-8H-Ju9"/>
-                <constraint firstItem="DQa-Pg-0HH" firstAttribute="top" secondItem="cbq-Ll-IgF" secondAttribute="top" constant="50" id="P3M-Mw-Z4g"/>
-                <constraint firstItem="oXJ-5Q-vmZ" firstAttribute="top" secondItem="DQa-Pg-0HH" secondAttribute="bottom" constant="40" id="Y1t-wi-dCB"/>
+                <constraint firstItem="q0W-s4-8oP" firstAttribute="leading" secondItem="xN4-zO-3oX" secondAttribute="trailing" constant="116" id="2uV-HR-x9X"/>
+                <constraint firstItem="xN4-zO-3oX" firstAttribute="trailing" secondItem="cbq-Ll-IgF" secondAttribute="centerX" multiplier="0.8" id="Jc9-Rw-Nsn"/>
+                <constraint firstItem="q0W-s4-8oP" firstAttribute="top" secondItem="oXJ-5Q-vmZ" secondAttribute="bottom" constant="20" id="KfE-Xa-dFL"/>
+                <constraint firstAttribute="centerX" secondItem="xN4-zO-3oX" secondAttribute="centerX" constant="68" id="N8U-fn-gQT"/>
+                <constraint firstItem="DQa-Pg-0HH" firstAttribute="top" secondItem="cbq-Ll-IgF" secondAttribute="top" constant="20" id="P3M-Mw-Z4g"/>
+                <constraint firstItem="oXJ-5Q-vmZ" firstAttribute="top" secondItem="DQa-Pg-0HH" secondAttribute="bottom" constant="20" id="Y1t-wi-dCB"/>
                 <constraint firstItem="DQa-Pg-0HH" firstAttribute="trailing" secondItem="cbq-Ll-IgF" secondAttribute="centerX" multiplier="1.5" id="dVj-zX-7bS"/>
+                <constraint firstItem="q0W-s4-8oP" firstAttribute="width" secondItem="q0W-s4-8oP" secondAttribute="height" multiplier="1:1" id="fjt-m4-KS7"/>
+                <constraint firstAttribute="centerX" secondItem="L0P-ae-mjE" secondAttribute="centerX" id="lG2-tH-EYm"/>
+                <constraint firstItem="xN4-zO-3oX" firstAttribute="top" secondItem="oXJ-5Q-vmZ" secondAttribute="bottom" constant="20" id="oMR-sI-KpO"/>
+                <constraint firstItem="xN4-zO-3oX" firstAttribute="leading" secondItem="cbq-Ll-IgF" secondAttribute="centerX" multiplier="0.2" id="pWO-ou-ruX"/>
+                <constraint firstItem="q0W-s4-8oP" firstAttribute="leading" secondItem="cbq-Ll-IgF" secondAttribute="centerX" multiplier="1.2" id="qiZ-p3-QGW"/>
+                <constraint firstItem="xN4-zO-3oX" firstAttribute="width" secondItem="xN4-zO-3oX" secondAttribute="height" multiplier="1:1" id="tBA-6j-EPY"/>
                 <constraint firstItem="oXJ-5Q-vmZ" firstAttribute="centerX" secondItem="DQa-Pg-0HH" secondAttribute="centerX" id="ttx-w2-akw"/>
+                <constraint firstItem="L0P-ae-mjE" firstAttribute="top" secondItem="q0W-s4-8oP" secondAttribute="bottom" constant="20" id="ybK-JS-xgg"/>
             </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="N8U-fn-gQT"/>
+                    <exclude reference="tBA-6j-EPY"/>
+                    <exclude reference="2uV-HR-x9X"/>
+                    <exclude reference="fjt-m4-KS7"/>
+                </mask>
+            </variation>
             <point key="canvasLocation" x="211" y="342"/>
         </view>
     </objects>
